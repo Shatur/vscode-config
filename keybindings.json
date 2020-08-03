@@ -174,7 +174,19 @@
         "when": "neovim.mode == cmdline_normal"
     },
 
-    // Mimic default vim shortcuts
+    // Do not use Ctrl+C as Esc in insert mode
+    {
+        "key": "ctrl+c",
+        "command": "vscode-neovim.escape",
+        "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-vscode-neovim.escape",
+        "when": "editorTextFocus && neovim.init"
+    },
+
+    // Mimic some default vim shortcuts in the whole VSCode
     {
         "key": "ctrl+w",
         "command": "deleteWordLeft",
@@ -207,7 +219,7 @@
         "command": "workbench.action.navigateForward"
     },
 
-    // Mimimic my Vim shortcuts
+    // Mimimic my other Vim shortcuts
     {
         "key": "alt+f",
         "command": "workbench.view.explorer"

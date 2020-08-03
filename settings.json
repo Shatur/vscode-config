@@ -10,7 +10,7 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "cmake.configureOnOpen": false,
-    "cmake.buildDirectory": "${workspaceFolder}/../${workspaceFolderBasename}-${buildType}-build",
+    "cmake.buildDirectory": "${workspaceFolder}/../${workspaceFolderBasename}-${buildKit}-${buildType}",
     "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
     "cmake.preferredGenerators": [
         "Ninja"
@@ -30,9 +30,8 @@
         "--clang-tidy",
         "--clang-tidy-checks=-clang-analyzer-*,bugprone-*,misc-*,-misc-non-private-member-variables-in-classes,performance-*,-performance-no-automatic-move,modernize-use-*,-modernize-use-nodiscard,-modernize-use-trailing-return-type",
     ],
-    "syncing.separateKeybindings": false,
     "vscode-neovim.neovimPath": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
     "workbench.colorTheme": "One Dark Pro",
-    "sync.gist": "13373ad391dd302060078f10c8475de4",
+    "editor.multiCursorModifier": "ctrlCmd",
 }
