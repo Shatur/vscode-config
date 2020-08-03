@@ -1,0 +1,236 @@
+[
+    // Tab for completion
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+
+    // Copy lines
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // Move lines
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus"
+    },
+
+    // Launch without debug
+    {
+        "key": "f6",
+        "command": "workbench.action.debug.run"
+    },
+
+    // CMake
+    {
+        "key": "f6",
+        "command": "cmake.launchTarget",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "shift+f5",
+        "command": "-cmake.launchTarget",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "cmake.debugTarget",
+        "when": "cmake:enableFullFeatureSet && inCMakeProject && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "-cmake.debugTarget",
+        "when": "cmake:enableFullFeatureSet && inCMakeProject && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "shift+f5",
+        "command": "cmake.selectLaunchTarget",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "shift+f7",
+        "command": "-cmake.buildWithTarget",
+        "when": "cmake:enableFullFeatureSet"
+    },
+    {
+        "key": "shift+f7",
+        "command": "cmake.setDefaultTarget",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "f8",
+        "command": "cmake.configure",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "alt+f7",
+        "command": "cmake.cleanRebuild",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "alt+f8",
+        "command": "cmake.cleanConfigure",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "f1",
+        "command": "cmake.onlineHelp",
+        "when": "resourceLangId == cmake"
+    },
+    {
+        "key": "meta+f7",
+        "command": "cmake.buildWithTarget",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "shift+f8",
+        "command": "cmake.setVariant",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "cmake.stop",
+        "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
+    },
+
+    // Godot
+    {
+        "key": "f1",
+        "command": "godot-tool.list_native_classes",
+        "when": "resourceLangId == gdscript"
+    },
+
+    // Git
+    {
+        "key": "alt+b",
+        "command": "git.checkout"
+    },
+
+    // Tabs and splits
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+w s",
+        "command": "workbench.action.splitEditorOrthogonal",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+w v",
+        "command": "workbench.action.splitEditor",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+
+    // Search history for Neovim
+    {
+        "command": "vscode-neovim.history-up-cmdline",
+        "key": "ctrl-p",
+        "when": "neovim.mode == cmdline_normal"
+    },
+    {
+        "command": "vscode-neovim.history-down-cmdline",
+        "key": "ctrl-n",
+        "when": "neovim.mode == cmdline_normal"
+    },
+
+    // Mimic default vim shortcuts
+    {
+        "key": "ctrl+w",
+        "command": "deleteWordLeft",
+        "when": "editorTextFocus && !neovim.recording && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-deleteWordLeft",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        "key": "shift+z shift+z",
+        "command": "workbench.action.closeFolder"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.navigateForward"
+    },
+
+    // Mimimic my Vim shortcuts
+    {
+        "key": "alt+f",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "alt+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "workbench.action.findInFiles",
+        "when": "neovim.mode != 'insert'"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "alt+p",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "alt+r",
+        "command": "revealFileInOS"
+    }
+]

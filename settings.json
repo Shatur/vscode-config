@@ -1,0 +1,38 @@
+{
+    "editor.renderWhitespace": "all",
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#abb2bf",
+        "editorCursor.background": "#3b4049",
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "cmake.configureOnOpen": false,
+    "cmake.buildDirectory": "${workspaceFolder}/../${workspaceFolderBasename}-${buildType}-build",
+    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+    "cmake.preferredGenerators": [
+        "Ninja"
+    ],
+    "cmakeExplorer.buildDir": "${buildDirectory}",
+    "C_Cpp.formatting": "Disabled",
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "clangd.arguments": [
+        "--header-insertion=never",
+        "--suggest-missing-includes",
+        "--background-index",
+        "-j=8",
+        "--cross-file-rename",
+        "--pch-storage=memory",
+        "--clang-tidy",
+        "--clang-tidy-checks=-clang-analyzer-*,bugprone-*,misc-*,-misc-non-private-member-variables-in-classes,performance-*,-performance-no-automatic-move,modernize-use-*,-modernize-use-nodiscard,-modernize-use-trailing-return-type",
+    ],
+    "syncing.separateKeybindings": false,
+    "vscode-neovim.neovimPath": "nvim",
+    "vscode-neovim.useCtrlKeysForInsertMode": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "sync.gist": "13373ad391dd302060078f10c8475de4",
+}
