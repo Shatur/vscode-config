@@ -2,6 +2,7 @@
 	"amiralizadeh9480.cpp-helper",
 	"arnohovhannisyan.syncify",
 	"asvetliakov.vscode-neovim",
+	"emroussel.atomize-atom-one-dark-theme",
 	"esbenp.prettier-vscode",
 	"fredericbonnet.cmake-test-adapter",
 	"geequlim.godot-tools",
@@ -12,6 +13,5 @@
 	"ms-vscode.cmake-tools",
 	"ms-vscode.cpptools",
 	"twxs.cmake",
-	"yzhang.markdown-all-in-one",
-	"zhuangtongfa.material-theme"
+	"yzhang.markdown-all-in-one"
 ]

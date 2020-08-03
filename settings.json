@@ -10,7 +10,7 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "cmake.configureOnOpen": false,
-    "cmake.buildDirectory": "${workspaceFolder}/../${workspaceFolderBasename}-${buildKit}-${buildType}",
+    "cmake.buildDirectory": "${workspaceFolder}/../${workspaceFolderBasename}-${generator}-${buildType}",
     "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
     "cmake.preferredGenerators": [
         "Ninja"
@@ -32,5 +32,5 @@
     ],
     "vscode-neovim.neovimPath": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "Atomize"
 }
