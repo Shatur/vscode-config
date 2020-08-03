@@ -10,7 +10,6 @@
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
-
     // Copy lines
     {
         "key": "ctrl+alt+up",
@@ -22,25 +21,46 @@
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
-
     // Move lines
     {
         "key": "alt+j",
         "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && neovim.mode != 'visual'"
     },
     {
         "key": "alt+k",
         "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && neovim.mode != 'visual'"
     },
-
+    {
+        "key": "alt+j",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-j>"
+    },
+    {
+        "key": "alt+k",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-k>"
+    },
+    {
+        "key": "alt+h",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-h>"
+    },
+    {
+        "key": "alt+l",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-l>"
+    },
     // Launch without debug
     {
         "key": "f6",
         "command": "workbench.action.debug.run"
     },
-
     // CMake
     {
         "key": "f6",
@@ -112,20 +132,17 @@
         "command": "cmake.stop",
         "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
     },
-
     // Godot
     {
         "key": "f1",
         "command": "godot-tool.list_native_classes",
         "when": "resourceLangId == gdscript"
     },
-
     // Git
     {
         "key": "alt+b",
         "command": "git.checkout"
     },
-
     // Tabs and splits
     {
         "key": "ctrl+q",
@@ -161,7 +178,6 @@
         "key": "ctrl+l",
         "command": "workbench.action.focusRightGroup"
     },
-
     // Search history for Neovim
     {
         "command": "vscode-neovim.history-up-cmdline",
@@ -173,7 +189,6 @@
         "key": "ctrl-n",
         "when": "neovim.mode == cmdline_normal"
     },
-
     // Do not use Ctrl+C as Esc in insert mode
     {
         "key": "ctrl+c",
@@ -185,7 +200,6 @@
         "command": "-vscode-neovim.escape",
         "when": "editorTextFocus && neovim.init"
     },
-
     // Mimic some default vim shortcuts in the whole VSCode
     {
         "key": "ctrl+w",
@@ -218,7 +232,6 @@
         "key": "ctrl+i",
         "command": "workbench.action.navigateForward"
     },
-
     // Mimimic my other Vim shortcuts
     {
         "key": "alt+f",
@@ -244,5 +257,9 @@
     {
         "key": "alt+r",
         "command": "revealFileInOS"
+    },
+    {
+        "key": "alt+s",
+        "command": "workbench.action.keybindingsReference"
     }
 ]
