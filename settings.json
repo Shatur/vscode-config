@@ -32,5 +32,8 @@
     ],
     "vscode-neovim.neovimPath": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
-    "workbench.colorTheme": "Atomize"
+    "workbench.colorTheme": "Atomize",
+    "cSpell.language": ",ru",
+    "gitTreeCompare.iconsMinimal": true,
+    "gitTreeCompare.autoRefresh": false
 }
