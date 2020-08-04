@@ -2,7 +2,6 @@
     "editor.renderWhitespace": "all",
     "editor.smoothScrolling": true,
     "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": true,
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#abb2bf",
         "editorCursor.background": "#3b4049",
@@ -33,7 +32,32 @@
     "vscode-neovim.neovimPath": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
     "workbench.colorTheme": "Atomize",
-    "cSpell.language": ",ru",
     "gitTreeCompare.iconsMinimal": true,
-    "gitTreeCompare.autoRefresh": false
+    "gitTreeCompare.autoRefresh": false,
+    "cSpell.language": ",ru",
+    "cSpell.languageSettings": [
+        {
+            "languageId": "cpp",
+            "includeRegExpList": [
+                "CStyleComment"
+            ]
+        },
+        {
+            "languageId": "c",
+            "includeRegExpList": [
+                "CStyleComment"
+            ]
+        }
+    ],
+    "cSpell.enabledLanguageIds": [
+        "c",
+        "cpp",
+        "git-commit",
+        "html",
+        "json",
+        "markdown",
+        "plaintext",
+        "python",
+        "gdscript",
+    ]
 }
