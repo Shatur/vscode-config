@@ -1,21 +1,22 @@
 [
 	"amiralizadeh9480.cpp-helper",
 	"arnohovhannisyan.syncify",
-	"asvetliakov.vscode-neovim",
+	"ban.spellright",
 	"bierner.markdown-mermaid",
 	"emroussel.atomize-atom-one-dark-theme",
-	"esbenp.prettier-vscode",
 	"Exelord.git-commits",
 	"fabiospampinato.vscode-open-in-github",
 	"fredericbonnet.cmake-test-adapter",
 	"geequlim.godot-tools",
+	"GitHub.vscode-pull-request-github",
 	"hbenl.vscode-test-explorer",
 	"letmaik.git-tree-compare",
-	"llvm-vs-code-extensions.vscode-clangd",
+	"me-dutour-mathieu.vscode-github-actions",
 	"MS-CEINTL.vscode-language-pack-ru",
 	"ms-vscode.cmake-tools",
 	"ms-vscode.cpptools",
-	"streetsidesoftware.code-spell-checker",
-	"streetsidesoftware.code-spell-checker-russian",
-	"twxs.cmake"
+	"redhat.vscode-yaml",
+	"sandcastle.vscode-open",
+	"twxs.cmake",
+	"yzhang.markdown-all-in-one"
 ]
