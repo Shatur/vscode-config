@@ -4,8 +4,9 @@
     "editor.gotoLocation.alternativeDefinitionCommand": "editor.action.revealDeclaration",
     "editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.revealDeclaration",
     "editor.renderWhitespace": "all",
-    "editor.smoothScrolling": true,
     "editor.cursorBlinking": "phase",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
     "workbench.colorTheme": "Atomize",
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#abb2bf",
@@ -32,22 +33,35 @@
         "Ninja"
     ],
     "cmakeExplorer.buildDir": "${buildDirectory}",
-    "spellright.language": [
-        "en_US"
-    ],
-    "spellright.documentTypes": [
-        "cpp",
-        "json",
-        "markdown",
-        "plaintext"
-    ],
-    "spellright.spellContextByClass": {
-        "cpp": "comments",
-        "json": "comments"
-    },
-    "spellright.notificationClass": "information",
     "gitTreeCompare.iconsMinimal": true,
     "gitTreeCompare.autoRefresh": false,
     "vscode-neovim.neovimPath": "nvim",
-    "vscode-neovim.useCtrlKeysForInsertMode": false
+    "vscode-neovim.useCtrlKeysForInsertMode": false,
+    "vscode-neovim.easymotionOnTop": true,
+    "cSpell.language": ",ru",
+    "cSpell.languageSettings": [
+        {
+            "languageId": "cpp",
+            "includeRegExpList": [
+                "CStyleComment"
+            ]
+        },
+        {
+            "languageId": "c",
+            "includeRegExpList": [
+                "CStyleComment"
+            ]
+        }
+    ],
+    "cSpell.enabledLanguageIds": [
+        "c",
+        "cpp",
+        "git-commit",
+        "html",
+        "json",
+        "markdown",
+        "plaintext",
+        "python",
+        "gdscript",
+    ]
 }

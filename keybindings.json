@@ -217,6 +217,52 @@
         "command": "-markdown.extension.onOutdentLines",
         "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
     },
+
+    // Multiply cursors
+    {
+        "key": "alt+m",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'"
+    },
+    {
+        "key": "alt+m",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'",
+        "args": "<A-m>"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'",
+        "args": "<C-Down>"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'",
+        "args": "<C-Up>"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+
     
     // Mimic some other default vim shortcuts in the whole VSCode
     {
@@ -280,17 +326,6 @@
     {
         "key": "alt+b",
         "command": "git.checkout"
-    },
-    {
-        "key": "alt+m",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'"
-    },
-    {
-        "key": "alt+m",
-        "command": "vscode-neovim.send",
-        "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'",
-        "args": "<A-m>"
     },
     {
         "key": "alt+i",
