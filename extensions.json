@@ -15,6 +15,7 @@
 	"MS-CEINTL.vscode-language-pack-ru",
 	"ms-vscode.cmake-tools",
 	"ms-vscode.cpptools",
+	"ms-vsliveshare.vsliveshare",
 	"redhat.vscode-yaml",
 	"sandcastle.vscode-open",
 	"streetsidesoftware.code-spell-checker",

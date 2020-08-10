@@ -6,6 +6,7 @@
     "editor.renderWhitespace": "all",
     "editor.cursorBlinking": "phase",
     "editor.smoothScrolling": true,
+    "files.insertFinalNewline": true,
     "workbench.list.smoothScrolling": true,
     "workbench.colorTheme": "Atomize",
     "workbench.colorCustomizations": {
@@ -38,8 +39,16 @@
     "vscode-neovim.neovimPath": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
     "vscode-neovim.easymotionOnTop": true,
-    "cSpell.language": ",ru",
+    "cSpell.language": "en,ru",
+    "cSpell.showStatus": false,
+    "cSpell.spellCheckDelayMs": 300,
     "cSpell.languageSettings": [
+        {
+            "languageId": "gdscript",
+            "includeRegExpList": [
+                "\t*# (?!warning-ignore:).*"
+            ]
+        },
         {
             "languageId": "cpp",
             "includeRegExpList": [
