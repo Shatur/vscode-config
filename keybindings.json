@@ -13,6 +13,7 @@
     {
         "key": "tab",
         "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
     
     // Copy lines
@@ -71,7 +72,12 @@
     
     // CMake
     {
-        "key": "f6",
+        "key": "f1",
+        "command": "cmake.onlineHelp",
+        "when": "resourceLangId == cmake"
+    },
+    {
+        "key": "ctrl+f6",
         "command": "cmake.launchTarget",
         "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
     },
@@ -79,16 +85,6 @@
         "key": "shift+f5",
         "command": "-cmake.launchTarget",
         "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
-    },
-    {
-        "key": "f5",
-        "command": "cmake.debugTarget",
-        "when": "cmake:enableFullFeatureSet && inCMakeProject && !cmake:hideDebugCommand && !inDebugMode"
-    },
-    {
-        "key": "ctrl+f5",
-        "command": "-cmake.debugTarget",
-        "when": "cmake:enableFullFeatureSet && inCMakeProject && !cmake:hideDebugCommand && !inDebugMode"
     },
     {
         "key": "shift+f5",
@@ -121,12 +117,7 @@
         "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
     },
     {
-        "key": "f1",
-        "command": "cmake.onlineHelp",
-        "when": "resourceLangId == cmake"
-    },
-    {
-        "key": "meta+f7",
+        "key": "ctrl+f7",
         "command": "cmake.buildWithTarget",
         "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
     },
@@ -286,7 +277,8 @@
     },
     {
         "key": "shift+z shift+z",
-        "command": "workbench.action.closeFolder"
+        "command": "workbench.action.closeFolder",
+        "when": "neovim.mode != 'insert'"
     },
     {
         "key": "ctrl+o",

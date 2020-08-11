@@ -10,16 +10,15 @@
 	"geequlim.godot-tools",
 	"GitHub.vscode-pull-request-github",
 	"hbenl.vscode-test-explorer",
-	"letmaik.git-tree-compare",
 	"me-dutour-mathieu.vscode-github-actions",
 	"MS-CEINTL.vscode-language-pack-ru",
 	"ms-vscode.cmake-tools",
 	"ms-vscode.cpptools",
-	"ms-vsliveshare.vsliveshare",
 	"redhat.vscode-yaml",
 	"sandcastle.vscode-open",
 	"streetsidesoftware.code-spell-checker",
 	"streetsidesoftware.code-spell-checker-russian",
+	"tonka3000.qtvsctools",
 	"twxs.cmake",
 	"yzhang.markdown-all-in-one"
 ]

@@ -1,12 +1,15 @@
 {
     // Built-in settings
+    "terminal.external.linuxExec": "konsole",
+    "files.insertFinalNewline": true,
+    "git.confirmSync": false,
     "editor.gotoLocation.alternativeDeclarationCommand": "editor.action.revealDefinition",
     "editor.gotoLocation.alternativeDefinitionCommand": "editor.action.revealDeclaration",
     "editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.revealDeclaration",
     "editor.renderWhitespace": "all",
     "editor.cursorBlinking": "phase",
     "editor.smoothScrolling": true,
-    "files.insertFinalNewline": true,
+    "editor.cursorSmoothCaretAnimation": true,
     "workbench.list.smoothScrolling": true,
     "workbench.colorTheme": "Atomize",
     "workbench.colorCustomizations": {
@@ -34,8 +37,6 @@
         "Ninja"
     ],
     "cmakeExplorer.buildDir": "${buildDirectory}",
-    "gitTreeCompare.iconsMinimal": true,
-    "gitTreeCompare.autoRefresh": false,
     "vscode-neovim.neovimPath": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
     "vscode-neovim.easymotionOnTop": true,
@@ -67,10 +68,12 @@
         "cpp",
         "git-commit",
         "html",
-        "json",
+        "jsonc",
         "markdown",
         "plaintext",
         "python",
         "gdscript",
-    ]
+    ],
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "godot_tools.editor_path": "/usr/bin/godot"
 }
