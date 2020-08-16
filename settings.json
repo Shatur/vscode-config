@@ -11,6 +11,7 @@
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": true,
     "workbench.list.smoothScrolling": true,
+    "workbench.tree.indent": 16,
     "workbench.colorTheme": "Atomize",
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#abb2bf",
@@ -27,6 +28,7 @@
 
     // Plugins
     "githubPullRequests.telemetry.enabled": false,
+    "gitTreeCompare.iconsMinimal": true,
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "C_Cpp.vcpkg.enabled": false,
     "CppHelper.HeaderGuardPattern": "{FILE}_H",
@@ -37,6 +39,7 @@
         "Ninja"
     ],
     "cmakeExplorer.buildDir": "${buildDirectory}",
+    "markdown.extension.toc.updateOnSave": false,
     "vscode-neovim.neovimPath": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
     "vscode-neovim.easymotionOnTop": true,
@@ -44,6 +47,13 @@
     "cSpell.showStatus": false,
     "cSpell.spellCheckDelayMs": 300,
     "cSpell.languageSettings": [
+        {
+            "languageId": "markdown",
+            "ignoreRegExpList": [
+                "`.*?`",
+                "```(.|\n)*?```"
+            ]
+        },
         {
             "languageId": "gdscript",
             "includeRegExpList": [
@@ -73,6 +83,17 @@
         "plaintext",
         "python",
         "gdscript",
+    ],
+    "projectManager.git.maxDepthRecursion": 1,
+    "projectManager.git.baseFolders": [
+        "/mnt/Files/Git"
+    ],
+    "projectManager.git.ignoredFolders": [
+        "AUR"
+    ],
+    "projectManager.any.maxDepthRecursion": 1,
+    "projectManager.any.baseFolders": [
+        "/mnt/Files/Code"
     ],
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "godot_tools.editor_path": "/usr/bin/godot"

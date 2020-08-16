@@ -1,18 +1,13 @@
 [
-    // Seriously, who uses Save As more often than Save All?
-    {
-        "key": "ctrl+shift+s",
-        "command": "-workbench.action.files.saveAs"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "workbench.action.files.saveAll"
-    },
-
     // Tab completion
     {
         "key": "tab",
         "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
     
@@ -282,11 +277,13 @@
     },
     {
         "key": "ctrl+o",
-        "command": "workbench.action.navigateBack"
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus && !neovim.recording && neovim.mode != 'insert'"
     },
     {
         "key": "ctrl+i",
-        "command": "workbench.action.navigateForward"
+        "command": "workbench.action.navigateForward",
+        "when": "editorTextFocus && !neovim.recording && neovim.mode != 'insert'"
     },
     
     // Mimimic my custom shortcuts
@@ -304,12 +301,31 @@
         "when": "neovim.mode != 'insert'"
     },
     {
-        "key": "alt+t",
+        "key": "ctrl+t",
         "command": "workbench.action.gotoSymbol"
     },
     {
-        "key": "alt+p",
+        "key": "ctrl+t",
+        "command": "-vscode-neovim.send",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert && neovim.recording && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-vscode-neovim.send",
+        "when": "neovim.mode == 'cmdline_insert' || neovim.mode == 'cmdline_normal' || neovim.mode == 'cmdline_replace'"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
+    },
+    {
+        "key": "alt+t",
         "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-workbench.action.showAllSymbols"
     },
     {
         "key": "alt+s",
@@ -334,10 +350,22 @@
         "key": "alt+=",
         "command": "workbench.action.terminal.toggleTerminal"
     },
+    {
+        "key": "alt+p",
+        "command": "workbench.action.openRecent"
+    },
 
     // Other
     {
         "key": "alt+h",
         "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+n",
+        "command": "workbench.view.extension.project-manager"
+    },
+    {
+        "key": "alt+x",
+        "command": "workbench.view.extensions"
     }
 ]
