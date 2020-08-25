@@ -1,5 +1,4 @@
 [
-	"alefragnani.project-manager",
 	"amiralizadeh9480.cpp-helper",
 	"arnohovhannisyan.syncify",
 	"asvetliakov.vscode-neovim",
@@ -11,6 +10,7 @@
 	"geequlim.godot-tools",
 	"GitHub.vscode-pull-request-github",
 	"hbenl.vscode-test-explorer",
+	"L13RARY.l13-projects",
 	"letmaik.git-tree-compare",
 	"me-dutour-mathieu.vscode-github-actions",
 	"MS-CEINTL.vscode-language-pack-ru",
@@ -21,6 +21,7 @@
 	"sandcastle.vscode-open",
 	"streetsidesoftware.code-spell-checker",
 	"streetsidesoftware.code-spell-checker-russian",
+	"tonka3000.qtvsctools",
 	"twxs.cmake",
 	"yzhang.markdown-all-in-one"
 ]

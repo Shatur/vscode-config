@@ -288,6 +288,26 @@
     
     // Mimimic my custom shortcuts
     {
+        "key": "ctrl+=",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'normal'",
+        "args": "<C-=>"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'normal'",
+        "args": "<C-->"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
         "key": "alt+f",
         "command": "workbench.view.explorer"
     },
@@ -362,7 +382,7 @@
     },
     {
         "key": "alt+n",
-        "command": "workbench.view.extension.project-manager"
+        "command": "workbench.view.extension.l13Projects"
     },
     {
         "key": "alt+x",
