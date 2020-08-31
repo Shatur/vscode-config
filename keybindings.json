@@ -126,6 +126,11 @@
         "command": "cmake.stop",
         "when": "cmake:enableFullFeatureSet && !cmake:hideDebugCommand && !inDebugMode"
     },
+    {
+        "key": "alt+backspace",
+        "command": "workbench.action.debug.stop",
+        "when": "inDebugMode"
+    },
     
     // Godot
     {
@@ -387,5 +392,9 @@
     {
         "key": "alt+x",
         "command": "workbench.view.extensions"
+    },
+    {
+        "key": "alt+d",
+        "command": "workbench.view.debug"
     }
 ]

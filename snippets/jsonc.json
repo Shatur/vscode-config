@@ -9,7 +9,7 @@
         "    \"program\": \"\\${command:cmake.launchTargetPath}\",",
         "    \"args\": [],",
         "    \"stopAtEntry\": false,",
-        "    \"cwd\": \"${command:cmake.launchTargetDirectory}\",",
+        "    \"cwd\": \"\\${command:cmake.launchTargetDirectory}\",",
         "    \"environment\": [$0],",
         "    \"externalConsole\": false,",
         "    \"MIMode\": \"gdb\",",
