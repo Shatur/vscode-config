@@ -44,7 +44,7 @@
     "markdown.extension.toc.updateOnSave": false,
     "vscode-neovim.neovimExecutablePaths.linux": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
-    "vscode-neovim.easymotionOnTop": true,
+    "vscode-neovim.textDecorationsAtTop": true,
     "cSpell.language": "en,ru",
     "cSpell.showStatus": false,
     "cSpell.spellCheckDelayMs": 300,
@@ -91,5 +91,6 @@
     "l13Projects.git.folders": [
         "/mnt/Files/Git"
     ],
-    "l13Projects.useCacheForDetectedProjects": true
+    "l13Projects.useCacheForDetectedProjects": true,
+    "cSpell.diagnosticLevel": "Hint"
 }
