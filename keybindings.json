@@ -355,6 +355,14 @@
         "key": "alt+p",
         "command": "workbench.action.openRecent"
     },
+    {
+        "key": "alt+u",
+        "command": "git.push"
+    },
+    {
+        "key": "alt+y",
+        "command": "git.pullRebase"
+    },
 
     // Other
     {
@@ -376,5 +384,5 @@
     {
         "key": "alt+/",
         "command": "actions.find"
-    },
+    }
 ]
