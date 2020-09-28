@@ -139,6 +139,18 @@
         "when": "resourceLangId == gdscript"
     },
     
+    // C++
+    {
+        "key": "f1",
+        "command": "cppref.open",
+        "when": "resourceLangId == cpp"
+    },
+    {
+        "key": "shift+f1",
+        "command": "cppref.search",
+        "when": "resourceLangId == cpp"
+    },
+    
     // Tabs and splits
     {
         "key": "ctrl+q",
@@ -384,5 +396,9 @@
     {
         "key": "alt+/",
         "command": "actions.find"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "cpp-helper.create-implementation"
     }
 ]

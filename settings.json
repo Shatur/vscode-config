@@ -3,6 +3,7 @@
     "terminal.external.linuxExec": "konsole",
     "files.insertFinalNewline": true,
     "git.confirmSync": false,
+    "window.titleBarStyle": "custom",
     "editor.gotoLocation.alternativeDeclarationCommand": "editor.action.revealDefinition",
     "editor.gotoLocation.alternativeDefinitionCommand": "editor.action.revealDeclaration",
     "editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.revealDeclaration",
@@ -10,7 +11,6 @@
     "editor.renderWhitespace": "all",
     "editor.cursorBlinking": "phase",
     "editor.smoothScrolling": true,
-    "editor.cursorSmoothCaretAnimation": true,
     "workbench.list.smoothScrolling": true,
     "workbench.tree.indent": 16,
     "workbench.startupEditor": "none",
@@ -40,12 +40,12 @@
     "cmake.preferredGenerators": [
         "Ninja"
     ],
-    "cmakeExplorer.buildDir": "${buildDirectory}",
     "markdown.extension.toc.updateOnSave": false,
     "vscode-neovim.neovimExecutablePaths.linux": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
     "vscode-neovim.textDecorationsAtTop": true,
     "cSpell.language": "en,ru",
+    "cSpell.diagnosticLevel": "Hint",
     "cSpell.showStatus": false,
     "cSpell.spellCheckDelayMs": 300,
     "cSpell.languageSettings": [
@@ -92,5 +92,7 @@
         "/mnt/Files/Git"
     ],
     "l13Projects.useCacheForDetectedProjects": true,
-    "cSpell.diagnosticLevel": "Hint"
+    "VSCodeCounter.outputAsCSV": false,
+    "VSCodeCounter.outputAsText": false,
+    "VSCodeCounter.outputDirectory": ".vscode/VSCodeCounter",
 }
