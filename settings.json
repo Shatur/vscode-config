@@ -2,7 +2,9 @@
     // Built-in settings
     "terminal.external.linuxExec": "konsole",
     "files.insertFinalNewline": true,
+    "git.allowForcePush": true,
     "git.confirmSync": false,
+    "git.detectSubmodules": false,
     "window.titleBarStyle": "custom",
     "editor.gotoLocation.alternativeDeclarationCommand": "editor.action.revealDefinition",
     "editor.gotoLocation.alternativeDefinitionCommand": "editor.action.revealDeclaration",
@@ -33,8 +35,10 @@
     "gitTreeCompare.iconsMinimal": true,
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "C_Cpp.vcpkg.enabled": false,
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "CppHelper.HeaderGuardPattern": "{FILE}_H",
-    "cmake.configureOnOpen": true,
+    // "cmake.configureOnOpen": true,
+    "cmake.configureOnOpen": false,
     "cmake.buildDirectory": "${workspaceFolder}/../${workspaceFolderBasename}-${generator}-${buildType}",
     "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
     "cmake.preferredGenerators": [
@@ -43,6 +47,7 @@
     "markdown.extension.toc.updateOnSave": false,
     "vscode-neovim.neovimExecutablePaths.linux": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
+    "vscode-neovim.easymotionOnTop": true,
     "vscode-neovim.textDecorationsAtTop": true,
     "cSpell.language": "en,ru",
     "cSpell.diagnosticLevel": "Hint",
@@ -86,7 +91,6 @@
         "python",
         "gdscript",
     ],
-    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "godot_tools.editor_path": "/usr/bin/godot",
     "l13Projects.git.folders": [
         "/mnt/Files/Git"
@@ -95,4 +99,14 @@
     "VSCodeCounter.outputAsCSV": false,
     "VSCodeCounter.outputAsText": false,
     "VSCodeCounter.outputDirectory": ".vscode/VSCodeCounter",
+    "clangd.arguments": [
+        "--header-insertion=never",
+        "--suggest-missing-includes",
+        "--background-index",
+        "-j=8",
+        "--cross-file-rename",
+        "--pch-storage=memory",
+        "--clang-tidy",
+        "--clang-tidy-checks=-clang-analyzer-*,bugprone-*,misc-*,-misc-non-private-member-variables-in-classes,performance-*,-performance-no-automatic-move,modernize-use-*,-modernize-use-nodiscard,-modernize-use-trailing-return-type"
+    ]
 }

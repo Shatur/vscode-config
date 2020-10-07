@@ -10,7 +10,17 @@
         "command": "selectPrevSuggestion",
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
-    
+
+    // Seriosly, who use save as in VSCode? :)
+    {
+        "key": "ctrl+shift+s",
+        "command": "-workbench.action.files.saveAs"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.files.saveAll"
+    },
+
     // Copy lines
     {
         "key": "ctrl+alt+up",
@@ -280,7 +290,6 @@
         "when": "editorTextFocus"
     },
 
-    
     // Mimic some other default vim shortcuts in the whole VSCode
     {
         "key": "ctrl+w",
@@ -308,7 +317,7 @@
         "when": "editorTextFocus && !neovim.recording && neovim.mode != 'insert'"
     },
 
-    // Mimimic my custom shortcuts
+    // Mimimic my custom Neovim shortcuts
     {
         "key": "ctrl+=",
         "command": "vscode-neovim.send",
@@ -328,6 +337,17 @@
     {
         "key": "ctrl+-",
         "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "alt+=",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'",
+        "args": "<A-=>"
+    },
+    {
+        "key": "alt+=",
+        "command": "editor.action.formatSelection",
+        "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'"
     },
     {
         "key": "alt+f",
@@ -351,16 +371,11 @@
         "command": "git.checkout"
     },
     {
-        "key": "alt+i",
-        "command": "editor.action.formatSelection",
-        "when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+=",
+        "key": "alt+t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "alt+-",
+        "key": "ctrl+t",
         "command": "workbench.action.togglePanel"
     },
     {

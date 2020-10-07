@@ -1,6 +1,6 @@
 {
-    "CMake configuration": {
-        "prefix": ["cmake"],
+    "CMake C++": {
+        "prefix": ["cmake c++"],
         "body": [
         "{",
         "    \"name\": \"CMake Launch\",",
@@ -22,6 +22,21 @@
         "    ]",
         "}"
         ],
-        "description": "CMake configuration for launch and debug"
+        "description": "Launch and debug CMake projects using official C++ extension"
+    },
+    "CMake GDB": {
+        "prefix": ["cmake gdb"],
+        "body": [
+        "{",
+        "    \"type\": \"gdb\",",
+        "    \"request\": \"launch\",",
+        "    \"name\": \"Launch Program GDB\",",
+        "    \"target\": \"\\${command:cmake.launchTargetPath}\",",
+        "    \"cwd\": \"\\${command:cmake.launchTargetDirectory}\",",
+        "    \"valuesFormatting\": \"parseText\",",
+        "    \"arguments\": \"$0\"",
+        "}",
+        ],
+        "description": "Launch and debug CMake projects using GDB"
     }
 }
