@@ -37,14 +37,14 @@
     "C_Cpp.vcpkg.enabled": false,
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "CppHelper.HeaderGuardPattern": "{FILE}_H",
-    // "cmake.configureOnOpen": true,
-    "cmake.configureOnOpen": false,
+    "cmake.configureOnOpen": true,
     "cmake.buildDirectory": "${workspaceFolder}/../${workspaceFolderBasename}-${generator}-${buildType}",
     "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
     "cmake.preferredGenerators": [
         "Ninja"
     ],
     "markdown.extension.toc.updateOnSave": false,
+    "qttools.creator": "/usr/bin/qtcreator",
     "vscode-neovim.neovimExecutablePaths.linux": "nvim",
     "vscode-neovim.useCtrlKeysForInsertMode": false,
     "vscode-neovim.easymotionOnTop": true,

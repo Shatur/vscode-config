@@ -3,6 +3,7 @@
 	"arnohovhannisyan.syncify",
 	"asvetliakov.vscode-neovim",
 	"bierner.markdown-mermaid",
+	"cheshirekow.cmake-format",
 	"cimdalli.git-commit-amend-push-force",
 	"cschleiden.vscode-github-actions",
 	"cschlosser.doxdocgen",
@@ -14,10 +15,10 @@
 	"Guyutongxue.cpp-reference",
 	"L13RARY.l13-projects",
 	"letmaik.git-tree-compare",
-	"llvm-vs-code-extensions.vscode-clangd",
 	"me-dutour-mathieu.vscode-github-actions",
 	"MS-CEINTL.vscode-language-pack-ru",
 	"ms-vscode.cmake-tools",
+	"ms-vscode.cpptools",
 	"redhat.vscode-yaml",
 	"sandcastle.vscode-open",
 	"streetsidesoftware.code-spell-checker",
@@ -25,6 +26,5 @@
 	"tonka3000.qtvsctools",
 	"twxs.cmake",
 	"uctakeoff.vscode-counter",
-	"webfreak.debug",
 	"yzhang.markdown-all-in-one"
 ]
