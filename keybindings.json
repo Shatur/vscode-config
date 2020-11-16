@@ -267,6 +267,11 @@
         "args": "<A-m>"
     },
     {
+        "key": "alt+a",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
         "key": "ctrl+down",
         "command": "editor.action.insertCursorBelow",
         "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'"
@@ -434,9 +439,5 @@
     {
         "key": "ctrl+alt+i",
         "command": "cpp-helper.create-implementation"
-    },
-    {
-        "key": "shift+f6",
-        "command": "-workbench.action.focusPreviousPart"
     }
 ]

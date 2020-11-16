@@ -6,6 +6,7 @@
     "git.confirmSync": false,
     "git.detectSubmodules": false,
     "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Atomize",
     "editor.gotoLocation.alternativeDeclarationCommand": "editor.action.revealDefinition",
     "editor.gotoLocation.alternativeDefinitionCommand": "editor.action.revealDeclaration",
     "editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.revealDeclaration",
@@ -16,7 +17,6 @@
     "workbench.list.smoothScrolling": true,
     "workbench.tree.indent": 16,
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Atomize",
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#abb2bf",
         "editorCursor.background": "#3b4049",
@@ -32,7 +32,9 @@
 
     // Plugins
     "githubPullRequests.telemetry.enabled": false,
-    "gitTreeCompare.iconsMinimal": true,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.statusBar.enabled": false,
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "C_Cpp.vcpkg.enabled": false,
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
@@ -108,5 +110,6 @@
         "--pch-storage=memory",
         "--clang-tidy",
         "--clang-tidy-checks=-clang-analyzer-*,bugprone-*,misc-*,-misc-non-private-member-variables-in-classes,performance-*,-performance-no-automatic-move,modernize-use-*,-modernize-use-nodiscard,-modernize-use-trailing-return-type"
-    ]
+    ],
+    "clangd.onConfigChanged": "restart"
 }
