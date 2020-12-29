@@ -1,0 +1,71 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Godot server with two clients",
+            "type": "shell",
+            "command": "godot-headless --server & godot --connect & godot --connect",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "runOptions": {
+                "reevaluateOnRerun": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Profile CMake target with perf",
+            "type": "shell",
+            "command": "perf record -o ${command:cmake.launchTargetFilename}.perf ${command:cmake.launchTargetPath} ${input:arguments}",
+            "options": {
+                "cwd": "${command:cmake.launchTargetDirectory}"
+            },
+            "runOptions": {
+                "reevaluateOnRerun": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Profile CMake target with vallgrind",
+            "type": "shell",
+            "command": "valgrind --tool=callgrind --dump-instr=yes --simulate-cache=yes --collect-jumps=yes --callgrind-out-file=callgrind.out.${command:cmake.launchTargetFilename}.out.1 ${command:cmake.launchTargetPath} ${input:arguments}",
+            "options": {
+                "cwd": "${command:cmake.launchTargetDirectory}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Open profiled data by valgrind in KCacheGrind",
+            "type": "shell",
+            "command": "kcachegrind",
+            "args": [
+                "callgrind.out.${command:cmake.launchTargetFilename}.out.1"
+            ],
+            "options": {
+                "cwd": "${command:cmake.launchTargetDirectory}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Open profiled data by perf in Hotspot",
+            "type": "shell",
+            "command": "hotspot",
+            "args": [
+                "${command:cmake.launchTargetFilename}.perf"
+            ],
+            "options": {
+                "cwd": "${command:cmake.launchTargetDirectory}"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+          "id": "arguments",
+          "type": "promptString",
+          "description": "Command arguments"
+        }
+      ]
+}

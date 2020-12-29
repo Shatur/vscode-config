@@ -32,7 +32,7 @@
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
-    
+
     // Move lines (use default VSCode actions for normal mode and Neovim for other cases)
     {
         "key": "alt+j",
@@ -68,7 +68,7 @@
         "when": "editorTextFocus && neovim.mode == 'visual'",
         "args": "<A-l>"
     },
-    
+
     // CMake
     {
         "key": "f1",
@@ -140,14 +140,14 @@
         "command": "workbench.action.debug.stop",
         "when": "inDebugMode"
     },
-    
+
     // Godot
     {
         "key": "f1",
         "command": "godot-tool.list_native_classes",
         "when": "resourceLangId == gdscript"
     },
-    
+
     // C++
     {
         "key": "f1",
@@ -159,7 +159,7 @@
         "command": "cppref.search",
         "when": "resourceLangId == cpp"
     },
-    
+
     // Tabs and splits
     {
         "key": "ctrl+q",
@@ -209,7 +209,7 @@
         "key": "ctrl+l",
         "command": "workbench.action.focusRightGroup"
     },
-    
+
     // Remove Ctrl + C for exit
     {
         "key": "ctrl+c",
@@ -221,7 +221,7 @@
         "command": "-vscode-neovim.escape",
         "when": "editorTextFocus && neovim.init"
     },
-    
+
     // Change shortcuts for indents (conflicts with Neovim Ctrl+[)
     {
         "key": "ctrl+]",
