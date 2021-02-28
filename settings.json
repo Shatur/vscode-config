@@ -13,6 +13,7 @@
     "editor.renderWhitespace": "all",
     "editor.cursorBlinking": "phase",
     "editor.smoothScrolling": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "workbench.list.smoothScrolling": true,
     "workbench.tree.indent": 16,
     "workbench.startupEditor": "none",
@@ -109,6 +110,5 @@
         "--pch-storage=memory",
         "--clang-tidy",
         "--clang-tidy-checks=-clang-analyzer-*,bugprone-*,misc-*,-misc-non-private-member-variables-in-classes,performance-*,-performance-no-automatic-move,modernize-use-*,-modernize-use-nodiscard,-modernize-use-trailing-return-type"
-    ],
-    "diffEditor.ignoreTrimWhitespace": false
+    ]
 }
