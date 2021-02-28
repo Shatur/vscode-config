@@ -4,9 +4,33 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Test AES128",
+            "type": "shell",
+            "command": "/mnt/Files/Work/FortifyIQ/TestbenchEngine/Testbenches/VpiModule/start.sh",
+            "options": {
+                "cwd": "${command:cmake.buildDirectory}"
+            },
+            "runOptions": {
+                "reevaluateOnRerun": false
+            },
+            "problemMatcher": []
+        },
+        {
             "label": "Run Godot server with two clients",
             "type": "shell",
             "command": "godot-headless --server & godot --connect & godot --connect",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "runOptions": {
+                "reevaluateOnRerun": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Godot server with one client",
+            "type": "shell",
+            "command": "godot-headless --server & godot --connect",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
