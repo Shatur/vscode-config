@@ -1,9 +1,9 @@
 [
 	"amiralizadeh9480.cpp-helper",
 	"arnohovhannisyan.syncify",
-	"asvetliakov.vscode-neovim",
 	"bierner.markdown-mermaid",
 	"cimdalli.git-commit-amend-push-force",
+	"CoenraadS.bracket-pair-colorizer-2",
 	"cschleiden.vscode-github-actions",
 	"cschlosser.doxdocgen",
 	"eamodio.gitlens",
@@ -12,6 +12,7 @@
 	"Guyutongxue.cpp-reference",
 	"L13RARY.l13-projects",
 	"mads-hartmann.bash-ide-vscode",
+	"maketes.git-patch-utility",
 	"MS-CEINTL.vscode-language-pack-ru",
 	"ms-python.python",
 	"ms-toolsai.jupyter",

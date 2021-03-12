@@ -100,15 +100,5 @@
     "l13Projects.useCacheForDetectedProjects": true,
     "VSCodeCounter.outputAsCSV": false,
     "VSCodeCounter.outputAsText": false,
-    "VSCodeCounter.outputDirectory": ".vscode/VSCodeCounter",
-    "clangd.arguments": [
-        "--header-insertion=never",
-        "--suggest-missing-includes",
-        "--background-index",
-        "-j=8",
-        "--cross-file-rename",
-        "--pch-storage=memory",
-        "--clang-tidy",
-        "--clang-tidy-checks=-clang-analyzer-*,bugprone-*,misc-*,-misc-non-private-member-variables-in-classes,performance-*,-performance-no-automatic-move,modernize-use-*,-modernize-use-nodiscard,-modernize-use-trailing-return-type"
-    ]
+    "VSCodeCounter.outputDirectory": ".vscode/VSCodeCounter"
 }
