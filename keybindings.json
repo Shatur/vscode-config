@@ -269,7 +269,13 @@
     {
         "key": "alt+a",
         "command": "editor.action.selectHighlights",
-        "when": "editorFocus"
+        "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'"
+    },
+    {
+        "key": "alt+a",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'",
+        "args": "<A-a>"
     },
     {
         "key": "ctrl+down",
